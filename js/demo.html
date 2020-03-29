@@ -1,0 +1,21 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <script>
+           var phrase ="Les opérations de multiplication et de division utilisent les opérateurs Comme pour addition et la soustraction il existe aussi les opérateurs pour multiplier ou diviser un nombre";
+            var mots = phrase.toLocaleLowerCase().split(" ")
+            compteur = {}
+            for(var i = 0; i < mots.length; i++){
+                var mot = mots[i]
+                if(compteur[mot] === undefined){
+                    compteur[mot] = 1
+                } else{
+                    compteur[mot]++
+                }
+            }
+            console.log(compteur)
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
